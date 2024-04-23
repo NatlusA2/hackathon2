@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+   rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+   
+
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="bg-white fixed z-20 w-full">
+    <div class=" mx-auto px-4 py-2 flex justify-between items-center">
+      <div>
+        <a href="../src/index.html"> <img src="../img/logo.png" alt=""></a>
+      
+      </div>
+      <div class="hidden md:flex items-center">
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">AboutUs</a>
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Event</a>
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Donate</a>
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Contact</a>
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Testimonials</a>
+        <a
+          class="inline-block rounded border border-current px-8 py-1.5 text-lg font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-primary hover:bg-primary hover:text-white"
+          href="#"> Login
+        </a>
+      </div>
+      <div class="md:hidden">
+        <!-- Tombol Hamburger -->
+        <button id="btnToggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menu Hamburger -->
+    <div id="menu" class="md:hidden bg-white text-center">
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">AboutUs</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Event</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Donate</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Contact</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Testimonials</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 border rounded-xl mx-36 mb-2 py-2">Login</a>
+    </div>
+  </nav> 
+  <!-- navbar -->
+
+  <!-- search -->
+  <!-- search -->
+
+  <!-- banner -->
+  <div class="relative">
+      <img src="../img/Rectangle 11.png" alt="banner" class="w-full">
+  </div>
+  <!-- banner -->
+
+  <!-- content -->
+    <div class="flex justify-center mt-20 h-[800px]">
+        <div class="relative grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+        <!-- Item 1 -->
+        <div class="h-32 rounded-lg mx-10 ">
+            <h1 class="text-4xl font-bold mb-5 mt-10">Collaboration for a sustainable future</h1>
+            <p class="text-lg mb-2 whitespace-nowrap overflow-hidden text-ellipsis lg:whitespace-normal lg:overflow-visible lg:text-clip ">Lately, there has been a noticeable rise in collaborations between companies from diverse industries aimed at tackling environmental and social challenges. These partnerships blend unique perspectives and expertise to foster innovative solutions, spur progress, and generate positive impact. Through collective efforts, businesses can harness their resources and influence to build a more sustainable and fair world for future generations.
+            </p>
+            <p class="text-lg mb-2 whitespace-nowrap overflow-hidden text-ellipsis lg:whitespace-normal lg:overflow-visible lg:text-clip">Lately, there has been a noticeable rise in collaborations between companies from diverse industries aimed at tackling environmental and social challenges. These partnerships blend unique perspectives and expertise to foster innovative solutions, spur progress, and generate positive impact. Through collective efforts, businesses can harness their resources and influence to build a more sustainable and fair world for future generations.
+            </p>
+            <p class="text-lg mb-2 whitespace-nowrap overflow-hidden text-ellipsis lg:whitespace-normal lg:overflow-visible lg:text-clip">Lately, there has been a noticeable rise in collaborations between companies from diverse industries aimed at tackling environmental and social challenges. These partnerships blend unique perspectives and expertise to foster innovative solutions, spur progress, and generate positive impact. Through collective efforts, businesses can harness their resources and influence to build a more sustainable and fair world for future generations.</p>
+        </div>
+        
+        <!-- Garis Vertikal -->
+        <div class="lg:absolute lg:inset-y-0 lg:left-1/2 lg:bg-[#CBD400] lg:w-2 lg:mb-2"></div>
+        
+        <!-- Item 2 -->
+        <div class="lg:h-32 rounded-lg mt-20 ">
+            <h1 class="text-[#25396F] text-3xl font-bold ml-12 mb-5">Amount</h1>
+            <fieldset class="grid grid-cols-3 gap-4">
+                <legend class="sr-only">Delivery</legend>
+                <div>
+                  <label
+                    for="DeliveryStandard"
+                    class="block cursor-pointer rounded-lg border-2 border-[#CBD400] bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#CBD400] has-[:checked]:ring-1 has-[:checked]:ring-[#CBD400]"
+                  >
+                    <div >
+                      <p class="text-gray-700 text-center">Rp.10.000</p>
+                    </div>
+              
+                    <input
+                      type="radio"
+                      name="DeliveryOption"
+                      value="DeliveryStandard"
+                      id="DeliveryStandard"
+                      class="sr-only"
+                      checked
+                    />
+                  </label>
+                </div>
+                <div>
+                    <label
+                    for="DeliveryStandard"
+                    class="block cursor-pointer rounded-lg border-2 border-[#CBD400] bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#CBD400] has-[:checked]:ring-1 has-[:checked]:ring-[#CBD400]"
+                  >
+                    <div >
+                      <p class="text-gray-700 text-center">Rp.20.000</p>
+                    </div>
+              
+                    <input
+                      type="radio"
+                      name="DeliveryOption"
+                      value="DeliveryStandard"
+                      id="DeliveryStandard"
+                      class="sr-only"
+                      checked
+                    />
+                  </label>
+                </div>
+                <div>
+                    <label
+                    for="DeliveryStandard"
+                    class="block cursor-pointer rounded-lg border-2 border-[#CBD400] bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#CBD400] has-[:checked]:ring-1 has-[:checked]:ring-[#CBD400]"
+                  >
+                    <div >
+                      <p class="text-gray-700 text-center">Rp.50.000</p>
+                    </div>
+              
+                    <input
+                      type="radio"
+                      name="DeliveryOption"
+                      value="DeliveryStandard"
+                      id="DeliveryStandard"
+                      class="sr-only"
+                      checked
+                    />
+                  </label>
+                </div>
+                <div>
+                    <label
+                    for="DeliveryStandard"
+                    class="block cursor-pointer rounded-lg border-2 border-[#CBD400] bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#CBD400] has-[:checked]:ring-1 has-[:checked]:ring-[#CBD400]"
+                  >
+                    <div >
+                      <p class="text-gray-700 text-center">Rp.100.000</p>
+                    </div>
+              
+                    <input
+                      type="radio"
+                      name="DeliveryOption"
+                      value="DeliveryStandard"
+                      id="DeliveryStandard"
+                      class="sr-only"
+                      checked
+                    />
+                  </label>
+                </div>
+                <div>
+                    <label
+                    for="DeliveryStandard"
+                    class="block cursor-pointer rounded-lg border-2 border-[#CBD400] bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#CBD400] has-[:checked]:ring-1 has-[:checked]:ring-[#CBD400]"
+                  >
+                    <div >
+                      <p class="text-gray-700 text-center">Rp.200.000</p>
+                    </div>
+              
+                    <input
+                      type="radio"
+                      name="DeliveryOption"
+                      value="DeliveryStandard"
+                      id="DeliveryStandard"
+                      class="sr-only"
+                      checked
+                    />
+                  </label>
+                </div>
+                <div>
+                    <label
+                    for="DeliveryStandard"
+                    class="block cursor-pointer rounded-lg border-2 border-[#CBD400] bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#CBD400] has-[:checked]:ring-1 has-[:checked]:ring-[#CBD400]"
+                  >
+                    <div >
+                      <p class="text-gray-700 text-center">Rp.500.000</p>
+                    </div>
+              
+                    <input
+                      type="radio"
+                      name="DeliveryOption"
+                      value="DeliveryStandard"
+                      id="DeliveryStandard"
+                      class="sr-only"
+                      checked
+                    />
+                  </label>
+                </div>
+              </fieldset>
+            <h1 class="text-[#25396F] text-3xl font-bold ml-12 mb-5 my-8">Payment</h1>
+            <div class="flex  items-center justify-center ">
+                <div class="mx-auto max-w-6xl px-12">
+                <div class="flex flex-wrap gap-3">
+                    <label class="cursor-pointer">
+                    <input type="radio" class="peer sr-only" name="pricing" />
+                    <div class="w-72 max-w-xl rounded-md border shadow-lg bg-[#F7F9D9] p-3 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-[#F7F9D9] peer-checked:ring-offset-2">
+                        <div class="flex flex-col gap-1">
+                        <div class="flex items-center justify-center text-center">
+                            <p class="font-semibold  text-xl text-gray-500">Bank Account</p>
+                        </div>
+                        </div>
+                    </div>
+                    </label>
+                    <label class="cursor-pointer">
+                    <input type="radio" class="peer sr-only" name="pricing" />
+                    <div class="w-72 max-w-xl rounded-md border shadow-lg bg-[#F7F9D9] p-3 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-[#F7F9D9] peer-checked:ring-offset-2">
+                        <div class="flex flex-col gap-1">
+                        <div class="flex items-center justify-center text-center">
+                            <p class="font-semibold  text-xl text-gray-500">Credit / Debit Card</p>
+                        </div>
+                        </div>
+                    </div>
+                    </label>           
+                </div>
+                </div>
+            </div>
+            <h1 class="text-[#25396F] text-3xl font-bold ml-12 mb-5 my-8">Type Donation</h1>
+            <div class="flex  items-center justify-center ">
+                <div class="mx-auto max-w-6xl px-12">
+                <div class="flex flex-wrap gap-3">
+                    <label class="cursor-pointer">
+                    <input type="radio" class="peer sr-only" name="pricing" />
+                    <div class="w-72 max-w-xl rounded-md border shadow-lg bg-[#F7F9D9] p-3 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-[#F7F9D9] peer-checked:ring-offset-2">
+                        <div class="flex flex-col gap-1">
+                        <div class="flex items-center justify-center text-center">
+                            <p class="font-semibold  text-xl text-gray-500">One Time</p>
+                        </div>
+                        </div>
+                    </div>
+                    </label>
+                    <label class="cursor-pointer">
+                    <input type="radio" class="peer sr-only" name="pricing" />
+                    <div class="w-72 max-w-xl rounded-md border shadow-lg bg-[#F7F9D9] p-3 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-[#F7F9D9] peer-checked:ring-offset-2">
+                        <div class="flex flex-col gap-1">
+                        <div class="flex items-center justify-center text-center">
+                            <p class="font-semibold  text-xl text-gray-500">Monthly</p>
+                        </div>
+                        </div>
+                    </div>
+                    </label>
+                </div>
+                </div>
+            </div>
+            <!-- button -->
+            <div class="flex justify-center">
+                <a href="" class=" py-2 mt-10 rounded-xl hover:text-white shadow-lg border-2 w-96 text-center text-xl bg-[#198754]">Next Step</a>
+            </div>
+            
+        </div> 
+        </div>
+    </div>
+  <!-- content -->
+
+  <!-- footer -->
+  <footer>
+    <div class=" lg:h-[300px] bg-[#EFF2B0] h-[600px] mt-36 lg:mt-0">
+      <div class=" flex justify-center items-center ">
+        <img src="../img/logo.png" alt="logo" class="mt-6 w-56">
+      </div>
+
+      <!-- grid -->
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-10 mx-10 my-10 ">
+        <div class="h-32 rounded-lg text-center lg:text-left ">
+          <h1 class="font-bold text-2xl mb-4">Kantor pusat</h1>
+          <p>Indonesia Team Impact Hub</p>
+          <p>Lippo Thamrin Lt.5 #0503</p>
+          <p>Jl.M.H.Thamrib No.20, Menteng</p>
+          <p>Jakarta Pusat 10350, Indonesia</p>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl my-5">Our Social Media</h1>
+          <div class="max-w-6xl mx-auto flex justify-center items-center mt-5">
+            <a href="#" class="text-rose-600 mr-7 hover:text-gray-400"><i class="fab fa-instagram  text-5xl"></i></a>
+            <a href="#" class="text-green-700 mr-7 hover:text-gray-400"><i class="fab fa-whatsapp text-5xl"></i></i></a>
+            <a href="#" class="text-red-700 mr-7 hover:text-gray-400"><i class="fab fa-youtube text-5xl"></i></a>
+            <a href="#" class="text-blue-600 mr-7 hover:text-gray-400"><i class="fab fa-linkedin-in text-5xl"></i></a>
+            <a href="#" class="text-blue-900 mr-7 hover:text-gray-400"><i class="fab fa-facebook-f text-5xl"></i></a>
+            <a href="#" class="text-blue-400 mr-7 hover:text-gray-400"><i class="fab fa-twitter text-5xl"></i></a>
+          </div>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl mb-3">Hubungi Kami</h1>
+          <p class="text-center "> <span class=""><i class="fas fa-phone" style="padding-right: 5px;"></i></span>
+            +62823 1000 1908 </p>
+          <p class="text-center"><i class="far fa-envelope" style="padding-right: 5px;"></i>info@tbnindonesia.org</p>
+        </div>
+      </div>
+      <!-- grid -->
+
+      <!-- copyright -->
+      <p class="text-xs text-gray-500 bg-[#EFF2B0] mt-[-10px] text-center">&copy; 2023 TBN Indonesia. All Rights Reserved.</p>
+      <!-- copyright -->
+    </div>
+  </footer>
+  <!-- footer -->
+ 
+
+
+  
+</body>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/index.js"></script>
+</html>
