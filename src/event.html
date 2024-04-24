@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+   rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+   
+
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="bg-white fixed z-20 w-full">
+    <div class=" mx-auto px-4 py-2 flex justify-between items-center">
+      <div>
+        <a href="../src/index.html"> <img src="../img/logo.png" alt=""></a>
+      
+      </div>
+      <div class="hidden md:flex items-center">
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">AboutUs</a>
+        <a href="../src/event.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Event</a>
+        <a href="../src/donate.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Donate</a>
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Contact</a>
+        <a href="../src/testimoni.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Testimonials</a>
+        <a
+          class="inline-block rounded border border-current px-8 py-1.5 text-lg font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-primary hover:bg-primary hover:text-white"
+          href="#"> Login
+        </a>
+      </div>
+      <div class="md:hidden">
+        <!-- Tombol Hamburger -->
+        <button id="btnToggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menu Hamburger -->
+    <div id="menu" class="md:hidden bg-white text-center">
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">AboutUs</a>
+      <a href="../src/event.html" class="block text-black hover:text-gray-300 px-4 py-2">Event</a>
+      <a href="../src/donate.html" class="block text-black hover:text-gray-300 px-4 py-2">Donate</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Contact</a>
+      <a href="../src/testimoni.html" class="block text-black hover:text-gray-300 px-4 py-2">Testimonials</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 border rounded-xl mx-36 mb-2 py-2">Login</a>
+    </div>
+  </nav> 
+  <!-- navbar -->
+
+  <!-- search -->
+  <!-- search -->
+
+  <!-- banner -->
+  <div class="relative">
+      <img src="../img/Rectangle 18.png" alt="banner" class="w-full h-[500px]">
+
+      <div class="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center">
+        <div class="text-overlay text-white text-center">
+          <h1 class="text-4xl md:text-6xl font-bold">Join the Best Event Ever!</h1>
+        </div>
+      </div>
+  </div>
+  <!-- banner -->
+
+  <!-- content -->
+    <div class="mx-10">
+        <p>TBN Indonesia partners with other organisations, individuals, and platforms within the greater impact ecosystem to share ideas, best practices, and highlight each other’s work in fighting poverty.</p>
+        <p class="my-3">Feel free to contact us at info@tbnindonesia.org to share your event on our website.</p>
+        <p>Check out our events below.</p>
+    </div>
+  <!-- content -->
+
+  <!-- card -->
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8 mx-10 my-10">
+    <a href="https://salesconference.tbnindonesia.org/" target="_blank">
+      <div class="bg-white border border-gray-200 shadow-2xl rounded-lg p-1 h-full w-full  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110   ">
+          <!-- {{-- Image --}} -->
+          <img class="rounded-lg mx-auto mb-5 h-56 w-full object-cover" src="../img/Rectangle 2 (2).png" alt=""/>
+          <div class="text-center ">
+              <h1 class=" font-extrabold text-xl lg:text-2xl ">Transformational Sales Conference 2023</h1>
+              <div class=" text-left mx-5 truncate">
+                <p class=" mx-auto mt-2 text-gray-400">10 November, 2023</p>
+              </div>
+          </div>
+      </div>
+    </a>
+
+    <a href="https://conference.tbnindonesia.org/" target="_blank">
+      <div class="bg-white border border-gray-200 shadow-2xl rounded-lg p-1 h-full w-full  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  ">
+          <!-- {{-- Image --}} -->
+          <img class="rounded-lg mx-auto mb-5 h-56 w-full object-cover" src="../img/Rectangle 2 (3).png" alt=""/>
+          <div class="text-center ">
+              <h1 class=" font-extrabold text-xl lg:text-2xl ">TBN Asia Conference 2023</h1>
+              <div class=" text-left mx-5 truncate">
+                <p class=" mx-auto mt-2 text-gray-400">7 September, 2023 - 9 September, 2023</p>
+              </div>
+          </div>
+      </div>
+    </a>
+ 
+    <a href="">
+      <div class="bg-white border border-gray-200 shadow-2xl rounded-lg p-1 h-full w-full  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-no-drop ">
+          <!-- {{-- Image --}} -->
+          <img class="rounded-lg mx-auto mb-5 h-56 w-full object-cover" src="../img/Rectangle 15.png" alt=""/>
+          <div class="text-center ">
+              <h1 class=" font-extrabold text-xl lg:text-2xl ">Upcoming Event</h1>
+              <div class=" text-left mx-5 truncate">
+                <p class=" mx-auto mt-2 text-gray-400">Comming soon</p>
+              </div>
+          </div>
+      </div>
+    </a>
+
+    <a href="">
+      <div class="bg-white border border-gray-200 shadow-2xl rounded-lg p-1 h-full w-full  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-no-drop">
+          <!-- {{-- Image --}} -->
+          <img class="rounded-lg mx-auto mb-5 h-56 w-full object-cover" src="../img/Rectangle 15.png" alt=""/>
+          <div class="text-center ">
+              <h1 class=" font-extrabold text-xl lg:text-2xl ">Upcoming Event</h1>
+              <div class=" text-left mx-5 truncate">
+                <p class=" mx-auto mt-2 text-gray-400">Comming soon</p>
+              </div>
+          </div>
+      </div>
+    </a>
+
+    <a href="">
+      <div class="bg-white border border-gray-200 shadow-2xl rounded-lg p-1 h-full w-full  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-no-drop ">
+          <!-- {{-- Image --}} -->
+          <img class="rounded-lg mx-auto mb-5 h-56 w-full object-cover" src="../img/Rectangle 15.png" alt=""/>
+          <div class="text-center ">
+              <h1 class=" font-extrabold text-xl lg:text-2xl ">Upcoming Event</h1>
+              <div class=" text-left mx-5 truncate">
+                <p class=" mx-auto mt-2 text-gray-400">Comming soon</p>
+              </div>
+          </div>
+      </div>
+    </a>
+
+    <a href="">
+      <div class="bg-white border border-gray-200 shadow-2xl rounded-lg p-1 h-full w-full  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-no-drop ">
+          <!-- {{-- Image --}} -->
+          <img class="rounded-lg mx-auto mb-5 h-56 w-full object-cover" src="../img/Rectangle 15.png" alt=""/>
+          <div class="text-center ">
+              <h1 class=" font-extrabold text-xl lg:text-2xl ">Upcoming Event</h1>
+              <div class=" text-left mx-5 truncate">
+                <p class=" mx-auto mt-2 text-gray-400">Comming soon</p>
+              </div>
+          </div>
+      </div>
+    </a>
+   
+  </div>
+  <!-- card -->
+
+  <!-- footer -->
+  <footer>
+    <div class=" lg:h-[300px] bg-[#EFF2B0] h-[600px] mt-36 lg:mt-0">
+      <div class=" flex justify-center items-center ">
+        <img src="../img/logo.png" alt="logo" class="mt-6 w-56">
+      </div>
+
+      <!-- grid -->
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-10 mx-10 my-10 ">
+        <div class="h-32 rounded-lg text-center lg:text-left ">
+          <h1 class="font-bold text-2xl mb-4">Kantor pusat</h1>
+          <p>Indonesia Team Impact Hub</p>
+          <p>Lippo Thamrin Lt.5 #0503</p>
+          <p>Jl.M.H.Thamrib No.20, Menteng</p>
+          <p>Jakarta Pusat 10350, Indonesia</p>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl my-5">Our Social Media</h1>
+          <div class="max-w-6xl mx-auto flex justify-center items-center mt-5">
+            <a href="#" class="text-rose-600 mr-7 hover:text-gray-400"><i class="fab fa-instagram  text-5xl"></i></a>
+            <a href="#" class="text-green-700 mr-7 hover:text-gray-400"><i class="fab fa-whatsapp text-5xl"></i></i></a>
+            <a href="#" class="text-red-700 mr-7 hover:text-gray-400"><i class="fab fa-youtube text-5xl"></i></a>
+            <a href="#" class="text-blue-600 mr-7 hover:text-gray-400"><i class="fab fa-linkedin-in text-5xl"></i></a>
+            <a href="#" class="text-blue-900 mr-7 hover:text-gray-400"><i class="fab fa-facebook-f text-5xl"></i></a>
+            <a href="#" class="text-blue-400 mr-7 hover:text-gray-400"><i class="fab fa-twitter text-5xl"></i></a>
+          </div>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl mb-3">Hubungi Kami</h1>
+          <p class="text-center "> <span class=""><i class="fas fa-phone" style="padding-right: 5px;"></i></span>
+            +62823 1000 1908 </p>
+          <p class="text-center"><i class="far fa-envelope" style="padding-right: 5px;"></i>info@tbnindonesia.org</p>
+        </div>
+      </div>
+      <!-- grid -->
+
+      <!-- copyright -->
+      <p class="text-xs text-gray-500 bg-[#EFF2B0] mt-[-10px] text-center">&copy; 2023 TBN Indonesia. All Rights Reserved.</p>
+      <!-- copyright -->
+    </div>
+  </footer>
+  <!-- footer -->
+ 
+
+
+  
+</body>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/index.js"></script>
+</html>

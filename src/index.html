@@ -4,10 +4,393 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+   rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+   
+
 </head>
 <body>
-  <h1 class="text-[4rem] font-bold underline">
-    Hello world!
-  </h1>
+  <!-- navbar -->
+  <nav class="bg-white fixed z-20 w-full">
+    <div class=" mx-auto px-4 py-2 flex justify-between items-center">
+      <div>
+       <img src="../img/logo.png" alt="">
+      </div>
+      <div class="hidden md:flex items-center">
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">AboutUs</a>
+        <a href="../src/event.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Event</a>
+        <a href="../src/donate.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2 ">Donate</a>
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Contact</a>
+        <a href="../src/testimoni.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Testimonials</a>
+        <a
+          class="inline-block rounded border border-current px-8 py-1.5 text-lg font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-primary hover:bg-primary hover:text-white"
+          href="#"> Login
+        </a>
+      </div>
+      <div class="md:hidden">
+        <!-- Tombol Hamburger -->
+        <button id="btnToggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menu Hamburger -->
+    <div id="menu" class="md:hidden bg-white text-center">
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">AbooutUs</a>
+      <a href="../src/event.html" class="block text-black hover:text-gray-300 px-4 py-2">Event</a>
+      <a href="../src/donate.html" class="block text-black hover:text-gray-300 px-4 py-2">Donate</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Contact</a>
+      <a href="../src/testimoni.html" class="block text-black hover:text-gray-300 px-4 py-2">Testimonials</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 border rounded-xl mx-36 mb-2 py-2">Login</a>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- search -->
+  <!-- search -->
+
+  <!-- banner -->
+  <div class="relative">
+      <video autoplay loop muted class="h-[625px] w-full object-cover">
+        <source src="../img/banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="absolute top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center">
+        <div class="text-overlay text-white text-center">
+          <h1 class="text-4xl md:text-6xl font-bold  " >Uplifting Poverty through Enterprise Solutions in Indonesia</h1>
+        </div>
+      </div>
+  </div>
+  <!-- banner -->
+
+  <!-- conten1 -->
+  <section class="  pt-10 text-center  bg-bg lg:h-56 h-96">
+    <h1 class="font-bold text-4xl">Who we are?</h1>
+    <p class="mx-20 mt-5 text-lg">The Social Foundation that encompasses a community comprising Investors, NGOs, Educators, and Philanthropists bringing about transformation to a better life by solving social problems through social entrepreneurship.</p>
+    
+  </section>
+  <!-- conten1 -->
+
+  <!-- content 2 -->
+  <section class=" pt-10 text-center lg:h-72  h-[500px]">
+    <h1 class="font-bold text-4xl">Collaboration for a sustainable future</h1>
+    <p class="pt-5 mx-20 text-lg">Lately, there has been a noticeable rise in collaborations between companies from diverse industries aimed at tackling environmental and social challenges. These partnerships blend unique perspectives and expertise to foster innovative solutions, spur progress, and generate positive impact. Through collective efforts, businesses can harness their resources and influence to build a more sustainable and fair world for future generations.</p>
+  </section>
+  <!-- content 2 -->
+
+  <!-- content card -->
+  <section class="mb-5 bg-bg">
+    <h1 class="pl-5 text-5xl py-6 font-bold text-center">Last Event</h1>
+    <div class="flex justify-center">
+        <div class="w-3/10 flex items-center">
+            <div class="w-full text-right">
+                <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="sliderContainer" class="w-full overflow-hidden">
+            <ul id="slider" class="flex w-full duration-700">
+                <li class="p-3 ">
+                    <div class="bg-white border border-gray-200 shadow-xl rounded-lg p-1 h-full w-full  ">
+                        <!-- {{-- Image --}} -->
+                        <img class="rounded-lg mx-auto mb-5 h-40 w-full object-cover" src="../img/Rectangle 2 (2).png" alt=""/>
+                        <div class="text-center ">
+                            <h1 class=" font-extrabold text-xl lg:text-2xl ">Transformational Sales Conference 2023</h1>
+                            <div class=" text-left mx-5 truncate">
+                              <p class="mb-2">It's crucial to adapt to the changing sales landscape in the digital age, and Seth Godin's quote emphasizes the importance of customer-centricity.
+                                <p class="mb-2"> Digital transformation has indeed shifted the focus towards online sales, but it's essential to remember that serving the customer's needs remains paramount.</p>
+                               <p>The Transformational Sales Conference sounds like a great opportunity to explore the evolving world of sales and learn how to provide excellent service in both online and offline contexts.</p>
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Button-->
+                        <div class="mt-4 flex items-center justify-center mb-4">
+                            <a href="https://salesconference.tbnindonesia.org/" target="_blank" class=" items-center text-center w-48 py-1.5 text-sm font-medium  text-white bg-[#198754] rounded-full border-2 border-[#198754]  hover:text-slate-200 focus:z-10 focus:ring-2 focus:text-[white]">
+                                Look up the conference
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="p-3 ">
+                    <div class="bg-white border border-gray-200 shadow-xl rounded-lg p-1 h-full w-full  ">
+                        <!-- {{-- Image --}} -->
+                        <img class="rounded-lg mx-auto mb-5 h-40 w-full object-cover" src="../img/Rectangle 2 (3).png" alt=""/>
+                        <div class="text-center ">
+                            <h1 class=" font-extrabold text-xl lg:text-2xl ">TBN Asia Conference 2023</h1>
+                            <div class=" text-left mx-5 truncate">
+                              <p class="mb-2">In a world once plagued by environmental degradation and societal inequalities, a transformative movement emerged, igniting a path towards a sustainable future. This narrative follows the lives of four individuals whose passion and dedication became catalysts for change in agriculture, education, green technology, digital innovation, and art and culture.
+                                <p class="mb-2"> Together, they embarked on a shared mission to harmonize humanity's relationship with the planet and shape a brighter tomorrow.</p>
+
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Button-->
+                        <div class="mt-4 flex items-center justify-center mb-4">
+                            <a href="https://conference.tbnindonesia.org/" target="_blank" class=" items-center text-center w-48 py-1.5 text-sm font-medium  text-white bg-[#198754] rounded-full border-2 border-[#198754]  hover:text-slate-200 focus:z-10 focus:ring-2 focus:text-[white]">
+                                Look up the conference
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="p-3 ">
+                    <div class="bg-white border border-gray-200 shadow-xl rounded-lg p-1 h-full w-full  ">
+                        <!-- {{-- Image --}} -->
+                        <img class="rounded-lg mx-auto mb-5 h-40 w-full object-cover" src="../img/baneer.jpg" alt=""/>
+                        <div class="text-center ">
+                            <h1 class=" font-extrabold text-xl lg:text-2xl ">TBN Asia Conference 2023</h1>
+                            <div class=" text-left mx-5 truncate">
+                              <p class="mb-2">In a world once plagued by environmental degradation and societal inequalities, a transformative movement emerged, igniting a path towards a sustainable future. This narrative follows the lives of four individuals whose passion and dedication became catalysts for change in agriculture, education, green technology, digital innovation, and art and culture.
+                                <p class="mb-2"> Together, they embarked on a shared mission to harmonize humanity's relationship with the planet and shape a brighter tomorrow.</p>
+
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Button-->
+                        <div class="mt-4 flex items-center justify-center mb-4">
+                            <a href=" https://conference.tbnindonesia.org/ "target="_blank" class=" items-center text-center w-48 py-1.5 text-sm font-medium  text-white bg-[#198754] rounded-full border-2 border-[#198754]  hover:text-slate-200 focus:z-10 focus:ring-2 focus:text-[white]">
+                                Look up the conference
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="p-3 ">
+                    <div class="bg-white border border-gray-200 shadow-xl rounded-lg p-1 h-full w-full  ">
+                        <!-- {{-- Image --}} -->
+                        <img class="rounded-lg mx-auto mb-5 h-40 w-full object-cover" src="../img/baneer.jpg" alt=""/>
+                        <div class="text-center ">
+                            <h1 class=" font-extrabold text-xl lg:text-2xl ">Transformational Sales Conference 2023</h1>
+                            <div class=" text-left mx-5 truncate">
+                              <p class="mb-2">It's crucial to adapt to the changing sales landscape in the digital age, and Seth Godin's quote emphasizes the importance of customer-centricity.
+                                <p class="mb-2"> Digital transformation has indeed shifted the focus towards online sales, but it's essential to remember that serving the customer's needs remains paramount.</p>
+                               <p>The Transformational Sales Conference sounds like a great opportunity to explore the evolving world of sales and learn how to provide excellent service in both online and offline contexts.</p>
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Button-->
+                        <div class="mt-4 flex items-center justify-center mb-4">
+                            <a href="https://salesconference.tbnindonesia.org/" target="_blank" class=" items-center text-center w-48 py-1.5 text-sm font-medium  text-white bg-[#198754] rounded-full border-2 border-[#198754]  hover:text-slate-200 focus:z-10 focus:ring-2 focus:text-[white]">
+                                Look up the conference
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="p-3 ">
+                    <div class="bg-white border border-gray-200 shadow-xl rounded-lg p-1 h-full w-full  ">
+                        <!-- {{-- Image --}} -->
+                        <img class="rounded-lg mx-auto mb-5 h-40 w-full object-cover" src="../img/baneer.jpg" alt=""/>
+                        <div class="text-center ">
+                            <h1 class=" font-extrabold text-xl lg:text-2xl ">Transformational Sales Conference 2023</h1>
+                            <div class=" text-left mx-5 truncate">
+                              <p class="mb-2">It's crucial to adapt to the changing sales landscape in the digital age, and Seth Godin's quote emphasizes the importance of customer-centricity.
+                                <p class="mb-2"> Digital transformation has indeed shifted the focus towards online sales, but it's essential to remember that serving the customer's needs remains paramount.</p>
+                               <p>The Transformational Sales Conference sounds like a great opportunity to explore the evolving world of sales and learn how to provide excellent service in both online and offline contexts.</p>
+                                
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Button-->
+                        <div class="mt-4 flex items-center justify-center mb-4">
+                            <a href="#" class=" items-center text-center w-48 py-1.5 text-sm font-medium  text-white bg-[#198754] rounded-full border-2 border-[#198754]  hover:text-slate-200 focus:z-10 focus:ring-2 focus:text-[white]">
+                                Look up the conference
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="w-3/10 flex items-center">
+            <div class="w-full">
+                <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-center items-center mt-10 ">
+      <a class="group relative inline-block focus:outline-none  mb-5 focus:ring" href="#">
+        <span
+          class="absolute rounded-lg inset-0 translate-x-0 translate-y-0 bg-[#198754] transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"
+        ></span>
+      
+        <span
+          class="relative inline-block border-2 rounded-lg border-[#198754] px-8 py-3 text-base font-bold  text-white  hover:text-black tracking-widest"
+        >
+          See more
+        </span>
+      </a>
+    </div>
+</section>
+
+  <!-- content card -->
+
+  <!-- grid -->
+  <!-- 1 -->
+  <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mt-14 mx-10 ">
+    <div class="h-32 rounded-lg mb-10 lg:mb-0 text-center lg:text-left mx-10  mt-14">
+      <h1 class="text-3xl md:text-4xl mb-2 lg:text-5xl font-bold text-gray-800">Investment</h1>
+      <p class="text-lg md:text-xl text-gray-600">Are you an entrepreneur seeking funding or an investor interested in joining our network? We function as a strategic bridge connecting entrepreneurs and investors in Indonesia, offering distinctive investment services tailored to meet the market's needs.</p>
+    </div>
+    <div class="h-32 rounded-lg ">
+      <img src="../img/Rectangle 2.png" alt="Gambar Anda" class="max-w-full h-auto mt-14 rounded-lg">
+    </div>
+  </div>
+
+<!-- 2 -->
+  <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 lg:mt-64 mx-10">
+    <div class="h-32 rounded-lg  mt-56 lg:mt-0">
+      <img src="../img/Rectangle 2 (1).png" alt="Gambar Anda" class="max-w-full h-auto mt-14 rounded-lg">
+    </div>
+    <div class="h-32 rounded-lg mb-10 lg:mb-0 text-center mt-56 lg:text-left mx-10 ">
+      <h1 class="text-3xl md:text-4xl mb-2 lg:text-5xl font-bold text-gray-800">Advisory</h1>
+      <p class="text-lg md:text-xl text-gray-600">Utilizing its core network and expertise, we have established an advisory entity that provides a wide range of key services. These services include research, capacity building, on-demand consultation, and educational content creation, all aimed at creating a positive impact for our extensive beneficiaries.</p>
+    </div>
+    
+  </div>
+  <!-- grid -->
+
+  <!-- patner -->
+  <section class=" lg:mt-80 mt-48">
+    <h1 class="text-center text-4xl pt-10 font-bold">Partners</h1>
+    <div class=" mx-10 py-8 ">
+      <!-- Kontainer untuk menggulir kartu -->
+      <div class="overflow-x-auto whitespace-nowrap">
+        <!-- Kartu 1 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 138px;">
+          <img src="../img/ActonInstitute.png" alt="">
+          
+        </div>
+        <!-- Kartu 2 -->
+        <div class="inline-block bg-gray-200  shadow-md rounded-lg  m-2" style="width: 90px;">
+         <img src="../img/actxplorer.png" alt="" class="w-32">
+          
+        </div>
+        <!-- Kartu 3 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 130px;">
+          <img src="../img/MEEK.png" alt="">
+        
+        </div>
+        <!-- Kartu 4 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 300px;">
+          <img src="../img/tdr-one-team.png" alt="">
+        
+        </div>
+        <!-- Kartu 5 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 130px;">
+          <img src="../img/WHydrocolloids.png" alt="">
+        
+        </div>
+        <!-- Kartu 6 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 168px;">
+          <img src="../img/yss.png" alt="">
+          
+        </div>
+        <!-- Kartu 7 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 66px;">
+         <img src="../img/kori.png" alt="">
+        
+        </div>
+        <!-- Kartu 8 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 300px;">
+          <img src="../img/go-kampus.png" alt="">
+        
+        </div>
+        <!-- Kartu 9 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 100px;">
+          <img src="../img/Mastereign.png" alt="">
+        
+        </div>
+        <!-- Kartu 10 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 130px;">
+          <img src="../img/ClarionNewlifeCapital.jpg" alt="">
+        
+        </div>
+        <!-- Kartu 11 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 80px;">
+          <img src="../img/belmont.png" alt="">
+        
+        </div>
+        <!-- Kartu 12 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 160px;">
+          <img src="../img/feelectric.png" alt="">
+        
+        </div>
+        <!-- Kartu 13 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 80px;">
+          <img src="../img/ffi.png" alt="">
+        </div>
+        <!-- Kartu 13 -->
+        <div class="inline-block bg-gray-200 shadow-md rounded-lg p-4 m-2" style="width: 120px;">
+          <img src="../img/trt.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- patner -->
+
+  <!-- footer -->
+  <footer>
+    <div class=" lg:h-[300px] bg-[#EFF2B0] h-[600px]">
+      <div class=" flex justify-center items-center ">
+        <img src="../img/logo.png" alt="logo" class="mt-6 w-56">
+      </div>
+
+      <!-- grid -->
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-10 mx-10 my-10 ">
+        <div class="h-32 rounded-lg text-center lg:text-left ">
+          <h1 class="font-bold text-2xl mb-4">Kantor pusat</h1>
+          <p>Indonesia Team Impact Hub</p>
+          <p>Lippo Thamrin Lt.5 #0503</p>
+          <p>Jl.M.H.Thamrib No.20, Menteng</p>
+          <p>Jakarta Pusat 10350, Indonesia</p>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl my-5">Our Social Media</h1>
+          <div class="max-w-6xl mx-auto flex justify-center items-center mt-5">
+            <a href="#" class="text-rose-600 mr-7 hover:text-gray-400"><i class="fab fa-instagram  text-5xl"></i></a>
+            <a href="#" class="text-green-700 mr-7 hover:text-gray-400"><i class="fab fa-whatsapp text-5xl"></i></i></a>
+            <a href="#" class="text-red-700 mr-7 hover:text-gray-400"><i class="fab fa-youtube text-5xl"></i></a>
+            <a href="#" class="text-blue-600 mr-7 hover:text-gray-400"><i class="fab fa-linkedin-in text-5xl"></i></a>
+            <a href="#" class="text-blue-900 mr-7 hover:text-gray-400"><i class="fab fa-facebook-f text-5xl"></i></a>
+            <a href="#" class="text-blue-400 mr-7 hover:text-gray-400"><i class="fab fa-twitter text-5xl"></i></a>
+          </div>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl mb-3">Hubungi Kami</h1>
+          <p class="text-center "> <span class=""><i class="fas fa-phone" style="padding-right: 5px;"></i></span>
+            +62823 1000 1908 </p>
+          <p class="text-center"><i class="far fa-envelope" style="padding-right: 5px;"></i>info@tbnindonesia.org</p>
+        </div>
+      </div>
+      <!-- grid -->
+
+      <!-- copyright -->
+      <p class="text-xs text-gray-500 bg-[#EFF2B0] mt-[-10px] text-center">&copy; 2023 TBN Indonesia. All Rights Reserved.</p>
+      <!-- copyright -->
+
+
+  </div>
+  </footer>
+  <!-- footer -->
+ 
+
+
+  
 </body>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/index.js"></script>
 </html>
