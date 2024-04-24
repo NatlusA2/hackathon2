@@ -36,11 +36,3 @@ function next() {
     if (+slider.style.marginLeft.slice(0, -2) != 0)
         slider.style.marginLeft = ((+slider.style.marginLeft.slice(0, -2)) + cardWidth) + 'px';
 }
-
-//   kalender
-const datepicker = new Datepicker(document.getElementById('datepicker'), {
-    buttonClass: 'bg-indigo-500 text-white py-1 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
-    position: 'tl-br',
-    autohide: true,
-    format: 'yyyy-mm-dd'
-  });

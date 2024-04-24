@@ -1,5 +1,8 @@
-.banner {
-    background-image: url('/');
-    background-size: cover;
-    background-position: center;
-}
+@keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
