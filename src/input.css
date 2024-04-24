@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-abouts {
+  background: url(../img/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gambar-about-1 {
+  background: url(../img/logo2.png);
+  background-repeat: no-repeat;
+  
+}
+
+.foto-ceo {
+  background: url(../img/ceo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-contact{
+    background: url(../img/bg-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gmbr-card1{
+    background: url(../img/location.png);
+    background-repeat: no-repeat;
+ 
+}

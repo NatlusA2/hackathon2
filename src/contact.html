@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"rel="stylesheet">
+
+</head>
+<body class="bg-white">
+       <!-- navbar -->
+  <nav class="bg-white fixed z-20 w-full">
+    <div class=" mx-auto px-4 py-2 flex justify-between items-center">
+      <div>
+       <img src="../img/logo.png" alt="">
+      </div>
+      <div class="hidden md:flex items-center">
+        <a href="../src/about.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">AboutUs</a>
+        <a href="../src/event.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Event</a>
+        <a href="../src/donate.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2 ">Donate</a>
+        <a href="../src/contact.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Contact</a>
+        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Testimonials</a>
+        <a
+          class="inline-block rounded border border-current px-8 py-1.5 text-lg font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-primary hover:bg-primary hover:text-green-600"
+          href="#"> Login
+        </a>
+      </div>
+      <div class="md:hidden">
+        <!-- Tombol Hamburger -->
+        <button id="btnToggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menu Hamburger -->
+    <div id="menu" class="md:hidden bg-white text-center">
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">AbooutUs</a>
+      <a href="../src/event.html" class="block text-black hover:text-gray-300 px-4 py-2">Event</a>
+      <a href="../src/donate.html" class="block text-black hover:text-gray-300 px-4 py-2">Donate</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Contact</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Testimonials</a>
+      <a href="#" class="block text-black hover:text-gray-300 px-4 border rounded-xl mx-36 mb-2 py-2">Login</a>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+
+    <div class="bg-contact h-[65vh] w-[full] flex justify-center items-center">
+        <div class="title">
+        <h1 class="text-white font-bold text-[3rem]">Contact Us </h1>
+        </div>
+        <div class="content min-h-screen w-[80%] absolute h-[400vh]  top-[18rem] md:h-auto">
+            <div class="contact-card md:flex md:gap-[3.5rem]">
+            <div class="cardbox1 bg-[#FAFBE6] rounded-md shadow-md flex items-center flex-col p-[1rem] md:w-[60rem] md:h-[45vh]">
+                <h1 class="text-[2rem] font-bold">headquarter</h1>
+                <div class="gmbr-card1 py-[1rem] w-[10rem] h-[18vh] "></div>
+                <p class="text-center font-medium ">Indonesia Team Impact Hub Lippo Thamrin Lt.5 #0503 Jl. M.H.Thamrin No.20, Menteng Jakarta Pusat 10350, Indonesia</p>
+            </div>
+
+            <div class="cardbox1 bg-[#FAFBE6] rounded-md shadow-md flex items-center flex-col p-[1rem] md:w-[60rem] md:h-[45vh]">
+                <h1 class="text-[2rem] font-bold">Social Media</h1>
+                <div class="social mt-[1rem]">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <ul>
+                    <img src="../img/social1.png" class=" h-[3rem] mt-[1rem]" >
+                    </ul>
+                    <ul class="flex gap-[0.52rem] mt-[2rem]">
+                    <img src="../img/Facebook.png" class="h-[3rem]">
+                    <img src="../img/LinkedIn.png" class="h-[3rem]">
+                    <img src="../img/Twitter.png" class="h-[3rem]">
+                    </ul>
+                </a>
+                </div>
+            </div>
+
+            <div class="cardbox1 bg-[#FAFBE6] rounded-md shadow-md flex items-center flex-col p-[1rem] md:w-[60rem] md:h-[45vh]">
+                <h1 class="text-[2rem] font-bold" >General contac</h1> 
+                <div class="general mt-[3rem]">
+                    <img src="../img/nomor.png" alt="">
+                    <img src="../img/email.png" class="mt-[2rem]">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="subs p-[1rem] pl-[2rem] bg-[#CBD400] flex flex-col items-center md:h-[30vh] mt-[20rem] mb-[10rem] ">
+        <div class="content-subs">
+            <h1 class="text-[2.5rem] pl-[2rem] font-bold">Let’s keep in touch</h1>
+            <p class=" text-[1.2rem]  pl-[2rem] ">Sign up our weekly email marketing newslatter and MailerLite Updates</p>
+            <div class="flex items-center ml-[1.7rem] p-3 rounded-md ">
+  <input type="email" placeholder="Enter your Email" class="rounded-l-md w-[50rem] px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600" />
+  <button class="bg-white text-black bg-green-600 font-semibold px-4 py-2 rounded-r-md hover:bg-green-600 hover:text-white transition duration-300">
+    Subscribe
+  </button>
+</div>
+        </div>
+    </div>
+     <!-- footer -->
+  <footer>
+    <div class=" lg:h-[300px] bg-[#EFF2B0] h-[600px] ">
+      <div class=" flex justify-center items-center ">
+        <img src="../img/logo.png" alt="logo" class="mt-6 w-56">
+      </div>
+
+      <!-- grid -->
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-10 mx-10 my-10 ">
+        <div class="h-32 rounded-lg text-center lg:text-left ">
+          <h1 class="font-bold text-2xl mb-4">Kantor pusat</h1>
+          <p>Indonesia Team Impact Hub</p>
+          <p>Lippo Thamrin Lt.5 #0503</p>
+          <p>Jl.M.H.Thamrib No.20, Menteng</p>
+          <p>Jakarta Pusat 10350, Indonesia</p>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl my-5">Our Social Media</h1>
+          <div class="max-w-6xl mx-auto flex justify-center items-center mt-5">
+            <a href="#" class="text-rose-600 mr-7 hover:text-gray-400"><i class="fab fa-instagram  text-5xl"></i></a>
+            <a href="#" class="text-green-700 mr-7 hover:text-gray-400"><i class="fab fa-whatsapp text-5xl"></i></i></a>
+            <a href="#" class="text-red-700 mr-7 hover:text-gray-400"><i class="fab fa-youtube text-5xl"></i></a>
+            <a href="#" class="text-blue-600 mr-7 hover:text-gray-400"><i class="fab fa-linkedin-in text-5xl"></i></a>
+            <a href="#" class="text-blue-900 mr-7 hover:text-gray-400"><i class="fab fa-facebook-f text-5xl"></i></a>
+            <a href="#" class="text-blue-400 mr-7 hover:text-gray-400"><i class="fab fa-twitter text-5xl"></i></a>
+          </div>
+        </div>
+        <div class="h-32 rounded-lg  text-center lg:text-left ">
+          <h1 class="text-center font-bold text-2xl mb-3">Hubungi Kami</h1>
+          <p class="text-center "> <span class=""><i class="fas fa-phone" style="padding-right: 5px;"></i></span>
+            +62823 1000 1908 </p>
+          <p class="text-center"><i class="far fa-envelope" style="padding-right: 5px;"></i>info@tbnindonesia.org</p>
+        </div>
+      </div>
+      <!-- grid -->
+
+      <!-- copyright -->
+      <p class="text-xs text-gray-500 bg-[#EFF2B0] mt-[-10px] text-center">&copy; 2023 TBN Indonesia. All Rights Reserved.</p>
+      <!-- copyright -->
+
+
+  </div>
+  </footer>
+  <!-- footer -->
+
+<script src="../js/index.js"></script>
+</body>
+</html>
