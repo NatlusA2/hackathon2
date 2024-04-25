@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
    
 </head>
 <body>
@@ -13,16 +14,18 @@
   <nav class="bg-white fixed z-20 w-full mb-[20rem] ">
     <div class=" mx-auto px-4 py-2 flex justify-between items-center">
       <div>
+        <a href="../src/index.html">
        <img src="../img/logo.png" alt="">
+      </a>
       </div>
       <div class="hidden md:flex items-center">
         <a href="../src/about.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">AboutUs</a>
         <a href="../src/event.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Event</a>
         <a href="../src/donate.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2 ">Donate</a>
         <a href="../src/contact.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Contact</a>
-        <a href="#" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Testimonials</a>
+        <a href="../src/testimoni.html" class="text-black font-semibold text-lg hover:text-gray-300 px-3 py-2">Testimonials</a>
         <a
-          class="inline-block rounded border border-current px-8 py-1.5 text-lg font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-primary hover:bg-primary hover:text-green-600"
+          class="inline-block rounded border border-current px-8 py-1.5 text-lg font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-primary hover:bg-primary hover:text-white"
           href="#"> Login
         </a>
       </div>
@@ -37,11 +40,11 @@
     </div>
     <!-- Menu Hamburger -->
     <div id="menu" class="md:hidden bg-white text-center">
-      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">AbooutUs</a>
+      <a href="../src/about.html" class="block text-black hover:text-gray-300 px-4 py-2">AbooutUs</a>
       <a href="../src/event.html" class="block text-black hover:text-gray-300 px-4 py-2">Event</a>
       <a href="../src/donate.html" class="block text-black hover:text-gray-300 px-4 py-2">Donate</a>
-      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Contact</a>
-      <a href="#" class="block text-black hover:text-gray-300 px-4 py-2">Testimonials</a>
+      <a href="../src/contact.html" class="block text-black hover:text-gray-300 px-4 py-2">Contact</a>
+      <a href="../src/testimoni.html" class="block text-black hover:text-gray-300 px-4 py-2">Testimonials</a>
       <a href="#" class="block text-black hover:text-gray-300 px-4 border rounded-xl mx-36 mb-2 py-2">Login</a>
     </div>
   </nav>
@@ -49,7 +52,7 @@
 
   <!-- content -->
     <div class="bg-abouts  h-[25vh] flex justify-center  " >
-        <div class="container bg-white w-[70%] absolute h-[485vh] drop-shadow-md p-[2rem] mt-[7rem] md:h-[380vh]" >
+        <div class="container bg-white w-[70%] absolute h-[410vh] drop-shadow-md p-[2rem] mt-[7rem] md:h-[330vh]" >
             <div class="content flex flex-col justify-center">
                 <div class="gambar-about-1 bg-gray-200 m-auto md:w-[30rem] md:h-[25vh] md:mt-[3rem] "> </div>
                 <h1 class="title text-text text-[2rem] text-center font-bold m-auto mt-[2rem] lg:text-[3rem]">Collaboration for a sustainable future</h1>
@@ -78,7 +81,7 @@
                     <h1 class=" text-text text-[2rem] font-bold text-center lg:text-[3rem] ">vision</h1>
                     <p class="  mt-[2rem] text-[1.25rem] md:text-[2.25rem]">Our <span class=" font-bold">Vision</span> is to uplift poverty through enterprise solutions.</p>
                 </div>
-                <div class="text2 m-auto w-[50%] mt-[2rem] text-center w-[40%] md:text-center md:w-[40%] md:mt-[1rem] ">
+                <div class="text2 m-auto w-[50%] mt-[2rem] text-center w-[40%] md:text-center md:w-[40%] md:mt-[0.1px] ">
                     <h1 class=" text-text text-[2rem] font-bold text-center lg:text-[3rem] ">mission</h1>
                     <p class=" text-[1.25rem] mt-[2rem] md:text-[2.25rem]">Our <span class=" font-bold">Vision</span> is to uplift poverty through enterprise solutions.</p>
                 </div>
@@ -94,8 +97,8 @@
                         <h1 class=" text-text text-[2rem] font-bold text-center">Empowerment</h1>
                         <p class=" text-[1.3rem] mt-[2rem]">Social entrepreneurs, business owners, and leaders are trained and equipped with business know-how, leadership skills, and character development, enabling transformative change through gateways of faith, purpose, and inner leadership.</p>
                     </div>
-                    <div class="text3 text-text text-center m-auto mt-[3rem] w-[70%] md:text-center md:w-[40%] ">
-                        <h1 class=" text-[2rem] font-bold text-center">Restoration</h1>
+                    <div class="text3 text-center m-auto mt-[3rem] w-[70%] md:text-center md:w-[40%] ">
+                        <h1 class=" text-[2rem] text-text font-bold text-center">Restoration</h1>
                         <p class=" text-[1.3rem] mt-[2rem]">The dignity of work and economic empowerment is restored by enterprises and markets, moving from charity and philanthropy to long-term sustainability.</p>
                     </div>
                 </div>
